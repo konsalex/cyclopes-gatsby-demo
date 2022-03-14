@@ -1,0 +1,23 @@
+# Directory where the images will be saved
+# and/or retrieved from the channel adapters
+imagesDir: "./images"
+
+visual:
+  # Path where our web-app is built
+  # Useful in CI envinroments where we build
+  # the website and the artifacts are ready
+  buildDir: "./public"
+  # Pages to visit and screenshot
+  pages:
+    # Path of the page
+    - path: "/"
+      # Type of device to screenshot
+      device: "both"
+      # Delay after the page is loaded
+      delay: 2000
+      screenshot: "fullpage"
+    - path: "/contact"
+      device: "mobile"
+    - path: "/team"
+      device: "desktop"
+      screenshot: "viewport"
